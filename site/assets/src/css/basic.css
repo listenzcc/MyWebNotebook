@@ -1,0 +1,16 @@
+.EmbedBody {
+    /* background-color: cadetblue; */
+    border-top: solid gray;
+    border-bottom: double gray;
+}
+
+.EmbedBody:hover {
+    border-top: solid darkred;
+    border-bottom: double darkred;
+}
+
+.UIParagraph {
+    font-family: ui-monospace;
+    color: deeppink;
+    font-size: x-small;
+}

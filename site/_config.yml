@@ -18,21 +18,37 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+# Description
+# Write an awesome description for your new site here. You can edit this
+# line in _config.yml. It will appear in your document head meta (for
+# Google search results) and in your feed.xml site description.
+
+title: CC Web Notebook
+email: listenzcc@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My notebook for web presentation of interesting contents.
+  It is hosted on github pages.
+  The contents focus on the IT programming and attractive Math/Physical toys.
 baseurl: "/MyWebNotebook" # the subpath of your site, e.g. /blog
 url: "https://listenzcc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+twitter_username: N.A.
+github_username: listenzcc
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# Defaults
+defaults:
+  - scope:
+      path: "assets/html"
+    values:
+      text: true
+  - scope:
+      path: "assets/src"
+    values:
+      text: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
