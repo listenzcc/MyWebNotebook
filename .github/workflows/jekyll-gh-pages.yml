@@ -32,14 +32,14 @@ jobs:
       - name: Modify Gemfile for GitHub Pages
         run: |
           # 注释掉 jekyll gem
-          sed -i 's/^gem "jekyll"/# gem "jekyll"/' Gemfile
+          sed -i 's/^gem "jekyll"/# gem "jekyll"/' ./site/Gemfile
           
           # 取消注释 github-pages gem
-          sed -i 's/^# gem "github-pages"/gem "github-pages"/' Gemfile
+          sed -i 's/^# gem "github-pages"/gem "github-pages"/' ./site/Gemfile
           
           # 可选：验证修改
           echo "修改后的 Gemfile 内容："
-          cat Gemfile | grep -E '(jekyll|github-pages)'
+          cat ./site/Gemfile | grep -E '(jekyll|github-pages)'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
